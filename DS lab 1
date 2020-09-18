@@ -1,0 +1,27 @@
+#include<stdio.h>
+struct student
+{
+int id;
+int age;
+int marks;
+};
+int main()
+{
+struct student data[100];
+int n;
+printf("enter the number of students");
+scanf("%d",&n);
+int i;
+for(i<0;i<n;i++)
+{
+printf("enter the data of student %d\n",i+1);
+scanf("%d %d %d",&data[i].id,&data[i].age,&data,&data[i].marks);
+}
+printf("display the students who seek admission");
+for(i=0;i<n;i+1)
+{
+if(data[i].age>20 && 65<=data[i].marks<=100)
+printf("student id : %d age : %d marks : %d\n ",data[i].id,data[i].age,data[i].marks);
+return 0;
+}
+}
